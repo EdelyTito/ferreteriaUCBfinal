@@ -1,0 +1,11 @@
+Link de GIT:
+
+https://github.com/EdelyTito/FerreteriaUCB.git
+
+LINK DE VIDEO:
+
+https://drive.google.com/file/d/1SuBfLzN_Ag7MZeGOZ-uQr8ZqOwrR1mzv/view?usp=share_link
+
+Recomendaciones:
+Algunos errores con los css.
+Run con: ng serve

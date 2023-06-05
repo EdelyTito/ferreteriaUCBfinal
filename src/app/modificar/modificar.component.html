@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>Modificar producto</p>
+    
+        <div class="row">
+            <div class="col-sm-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label"> Nombre de producto</label>
+                        <input [(ngModel)]="producto.nombre_producto" type="text" class="form-control" name="nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"> Descripcion</label>
+                        <input [(ngModel)]="producto.descripcion" type="text" class="form-control" name="descripcion">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"> Cantidad</label>
+                        <input [(ngModel)]="producto.cantidad_inventario" type="text" class="form-control" name="cantidad">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"> Precio</label>
+                        <input [(ngModel)]="producto.precio" type="text" class="form-control" name="precio">                    
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label"> Categoria</label>
+                        <input [(ngModel)]="producto.id_categoria" type="text" class="form-control" name="categoria">                    
+                    </div>
+    
+                    <button (click)="modificar()" class="btn btn-primary">Guardar</button>
+                </form>
+            </div>
+    
+    
+    
+            <div class="col-sm-6">
+                <form>
+                    <br>
+                    <div class="mb-3">
+                        <label class="form-label">{{producto.nombre_producto}}</label>
+                    </div>
+                    <br><br>
+                    <div class="mb-3">
+                        <label class="form-label">{{producto.descripcion}}</label>
+                    </div>
+                    <br><br>
+                    <div class="mb-3">
+                        <label class="form-label">{{producto.cantidad_inventario}}</label>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <label class="form-label">{{producto.precio}}</label>
+                    </div>
+                    <br>
+                    <div class="mb-3">
+                        <label class="form-label">{{producto.id_categoria}}</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
